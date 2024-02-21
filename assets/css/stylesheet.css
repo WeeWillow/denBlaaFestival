@@ -1,0 +1,44 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  
+    --hvid: hsl(0, 0%, 100%);
+    --moerkBlaa: #062f5f;
+    --lysTurkis: #77d1cf;
+    --lysBlaa: #b9d7ef;
+    --lysGraa: #f0f0f0;
+    --sort: #000000;
+}
+
+*{
+    margin: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+
+
+/*----------------------footer start--------------------------*/
+footer{
+    background-color: var(--moerkBlaa);
+    color: var(--hvid);
+    padding: 16px;
+    font-size: 12px;
+}
+.footerSvg{
+    fill: var(--hvid);
+    height: 20px;
+    margin: 8px 8px 8px 0px;
+}
+
+.footerDivPunkt{
+    display: flex;
+    align-items: center;
+}
+
+.spoergsmaalDiv, .kontaktDiv{
+    margin-top: 16px;
+}
+/*----------------------footer slut--------------------------*/
