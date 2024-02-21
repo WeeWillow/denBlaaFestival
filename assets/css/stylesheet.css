@@ -19,6 +19,15 @@
 }
 
 
+.btn{
+    background-color: var(--moerkBlaa);
+    border-radius: 6px;
+    color: var(--hvid);
+    border: none;
+    padding: 8px 16px;
+}
+
+
 
 /*----------------------footer start--------------------------*/
 footer{
