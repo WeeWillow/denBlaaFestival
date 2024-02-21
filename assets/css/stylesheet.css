@@ -7,6 +7,7 @@
     --hvid: hsl(0, 0%, 100%);
     --moerkBlaa: #062f5f;
     --lysTurkis: #77d1cf;
+    --moerkTurkis: #427877;
     --lysBlaa: #b9d7ef;
     --lysGraa: #f0f0f0;
     --sort: #000000;
@@ -27,7 +28,40 @@
     padding: 8px 16px;
 }
 
+/*----------------------header start--------------------------*/
+header{
+    display: flex;
+    margin: 8px 16px;
+    justify-content: space-between;
+}
+.headerSvg{
+    fill: var(--moerkBlaa);
+    height: 20px;
+    width: 20px;
+    margin-left: 12px;
+}
+.logo{
+    width: 25%;
+}
 
+.headerIkoner{
+    display: flex;
+    align-items: center;
+}
+
+.headerTekst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#overTekstHeader{
+    font-weight: 600;
+}
+#underTekstHeader{
+    font-size: 12px;
+    color: var(--moerkTurkis);
+}
+/*----------------------header slut--------------------------*/
 
 /*----------------------footer start--------------------------*/
 footer{
