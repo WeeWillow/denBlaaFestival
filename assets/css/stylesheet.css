@@ -1,29 +1,34 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-  
+
+
+/*----------------------general start--------------------------*/
+:root {
+    /* farver */
     --hvid: hsl(0, 0%, 100%);
-    --moerkBlaa: #062f5f;
+    --moerkBlaa: rgb(5, 47, 94);
     --lysTurkis: #77d1cf;
+    --lysTurkis20pct: hsla(179, 49%, 64%, 0.2);
     --moerkTurkis: #427877;
     --lysBlaa: #b9d7ef;
     --lysGraa: #f0f0f0;
     --sort: #000000;
-
-
+    /* margin, padding and radius */
+    --marginDouble: 32px;
+    --marginMedium: 24px;
     --marginStandart: 16px;
+    --marginHalf: 8px;
+    --borderRadiusStandard: 5px;
 }
 
-*{
+* {
     margin: 0;
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
 
 
-.btn{
+.btn {
     background-color: var(--moerkBlaa);
     border-radius: 6px;
     color: var(--hvid);
@@ -31,60 +36,215 @@
     padding: 8px 16px;
 }
 
+/*----------------------general slut--------------------------*/
+
+
+
 /*----------------------header start--------------------------*/
-header{
+header {
     display: flex;
     margin: 8px 16px;
     justify-content: space-between;
 }
-.headerSvg{
+
+.headerSvg {
     fill: var(--moerkBlaa);
     height: 20px;
     width: 20px;
     margin-left: 12px;
 }
-.logo{
+
+.logo {
     width: 25%;
 }
 
-.headerIkoner{
+.headerIkoner {
     display: flex;
     align-items: center;
 }
 
-.headerTekst{
+.headerTekst {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#overTekstHeader{
+
+#overTekstHeader {
     font-weight: 600;
 }
-#underTekstHeader{
+
+#underTekstHeader {
     font-size: 12px;
     color: var(--moerkTurkis);
 }
+
 /*----------------------header slut--------------------------*/
 
+
+
+/*----------------------main start--------------------------*/
+main {
+    margin: var(--marginStandart);
+}
+
+main header.hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 36px 0px 12px 0px;
+}
+
+.filterbtn {
+    margin: var(--marginStandart) 0 var(--marginStandart) 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterbtn p {
+    background: var(--lysBlaa);
+    color: var(--moerkBlaa);
+    padding: .3rem var(--marginHalf) .3rem var(--marginHalf);
+    border-radius: var(--borderRadiusStandard);
+    font-weight: 500;
+}
+
+.filterbtn span {
+    font-weight: 600;
+}
+
+/*------------event card start----------------*/
+header.eventheader {
+    display: block;
+    margin: 0 0 var(--marginHalf) 0;
+}
+
+header.eventheader p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+article {
+    margin: var(--marginMedium) 0 var(--marginMedium) 0;
+}
+
+.eventdate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.eventcard {
+    background: var(--lysTurkis20pct);
+    padding: var(--marginHalf);
+    color: var(--moerkBlaa);
+    border-radius: var(--borderRadiusStandard);
+}
+
+.koncertcard {
+    max-height: 120px;
+    background: var(--hvid);
+    margin: var(--marginStandart) 0 var(--marginStandart) 0;
+    border-radius: var(--borderRadiusStandard);
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3, 1fr;
+}
+
+.koncertcard .artistinfo {
+    padding: var(--marginHalf);
+    display: flex;
+    gap: .55rem;
+    justify-content: space-between;
+}
+
+.artistinfo.row1 {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+
+.artistinfo.row2 {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 var(--marginHalf);
+}
+
+.artistinfo.row2 p,
+.artistinfo.row3 p {
+    font-weight: 500;
+    text-transform: none;
+    font-size: small;
+    padding: 0 var(--marginHalf);
+}
+
+.artistinfo.row3 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+div.artistinfo p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.koncertsvg {
+    width: 16px;
+    height: auto;
+}
+
+.koncertcard img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: var(--borderRadiusStandard) 0 0 var(--borderRadiusStandard);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/*------------event card slut-----------------*/
+/*----------------------main slut--------------------------*/
+
+
+
 /*----------------------footer start--------------------------*/
-footer{
+footer {
     background-color: var(--moerkBlaa);
     color: var(--hvid);
     padding: 16px;
     font-size: 12px;
 }
-.footerSvg{
+
+.footerSvg {
     fill: var(--hvid);
     height: 20px;
     margin: 8px 8px 8px 0px;
 }
 
-.footerDivPunkt{
+.footerDivPunkt {
     display: flex;
     align-items: center;
 }
 
-.spoergsmaalDiv, .kontaktDiv{
+.spoergsmaalDiv,
+.kontaktDiv {
     margin-top: 16px;
 }
+
 /*----------------------footer slut--------------------------*/
