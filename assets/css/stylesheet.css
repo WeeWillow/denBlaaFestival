@@ -101,7 +101,7 @@ text-align: center;
 
 /* Gratis festival sektion */ 
 .gratisFestival{ 
-background-image: url(/assets/img/misc/musikNoter.jpg);
+background-image: url(/assets/img/misc/musikbagg.jpg);
 margin: var(--marginStandart);
 padding: 1rem;
 border-radius: 5px;
@@ -130,6 +130,7 @@ max-height 370px;
     padding-top: 0.5rem;
     max-width: 100%;
     height: auto;
+    border-radius: 5px 5px 5px 5px; 
 }
 
 .center{
