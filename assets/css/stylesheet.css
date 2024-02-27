@@ -31,6 +31,14 @@
     padding: 8px 16px;
 }
 
+h1{
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 36px 0px 12px 0px;
+}
+
 /*----------------------header start--------------------------*/
 header{
     display: flex;
@@ -65,6 +73,79 @@ header{
     color: var(--moerkTurkis);
 }
 /*----------------------header slut--------------------------*/
+
+/*----------------------Mad&Drikke start--------------------------*/
+main{
+    margin: 0 16px;
+}
+.introTekst{
+    font-size: 12px;
+    text-align: center;
+    margin: 0px 60px;
+}
+
+.searchMadOgDrikke{
+    display: flex;
+    justify-content: center;
+    margin: 24px 0px;
+}
+.searchFelt{
+    background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 95% 50%;
+
+    border-radius: 6px;
+    border: solid 1px var(--moerkBlaa);
+    margin-right: 12px;
+    padding: 4px 8px;
+}
+
+
+
+.tabMenu{
+    display: flex;
+    justify-content: space-between;
+}
+.tab {
+    display: none;
+}
+.tab.active {
+    display: flex;
+    background-color: var(--lysBlaa);
+    border-radius: 6px;
+}
+.tabButton {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 8px;
+}
+.tabButton.active {
+    background-color: var(--lysBlaa);
+    color: white;
+}
+
+.cardsContainer {
+    display: flex;
+
+}
+.card {
+    width: 160px;
+    height: 160px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tabMenuIcon{
+    height: 20px;
+}
+
+
+
+/*----------------------Mad&Drikke slut---------------------------*/
 
 /*----------------------footer start--------------------------*/
 footer{
