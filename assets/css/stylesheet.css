@@ -112,6 +112,7 @@ main{
 }
 .tab.active {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--lysBlaa);
     border-radius: 6px;
 }
@@ -129,13 +130,21 @@ main{
 
 .cardsContainer {
     display: flex;
-
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--lysBlaa);
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+.cardsContainer button{
+    max-width: 40%;
+    margin: 8px 16px;
 }
 .card {
     width: 160px;
     height: 160px;
     background-color: #f1f1f1;
-    margin: 10px;
+    margin: 10px 8px;
     padding: 10px;
 }
 
