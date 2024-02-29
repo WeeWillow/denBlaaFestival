@@ -61,34 +61,49 @@ header{
 
 
 
-
+/*-------------------------------mobilenav start---------------------------*/
 #mobileNav {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50%;
-    height: 50%;
-    background-color:#062f5f; /* Replace with desired background color */
-    z-index: 9999; /* Ensure the menu appears on top of other elements */
+    width: 40%;
+    height: auto;
+    background-color:#062f5f;
+    z-index: 1; 
     display: none;
+    padding: 16px;
 }
 #mobileNav.show {
     display: block;
+    
 }
-
-.burgerIcon{
+#mobileNav li{
+    display: flex;
+}
+#burgerIcon.active{
+    fill: var(--hvid);
+}
+#burgerIcon {
     width: 20px;
     position: relative;
-}
-.burgerMenuNav{
-
-    position: relative;
+    z-index: 2;
 }
 .burgerMenuNav a{
     color: var(--hvid);
     text-decoration: none;
     display: block;
+    padding: 12px;
 }
+.linkSvg{
+    fill: var(--hvid);
+    width: 20px;  
+}
+.navLink{
+    color: var(--lysTurkis);
+}
+/*-------------------------------mobilenav slut---------------------------*/
+
+
 /*----------------------header slut--------------------------*/
 
 
