@@ -46,12 +46,6 @@ header{
 .logo{
     width: 25%;
 }
-
-.headerIkoner{
-    display: flex;
-    align-items: center;
-}
-
 .headerTekst{
     display: flex;
     flex-direction: column;
@@ -63,6 +57,37 @@ header{
 #underTekstHeader{
     font-size: 12px;
     color: var(--moerkTurkis);
+}
+
+
+
+
+#mobileNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background-color:#062f5f; /* Replace with desired background color */
+    z-index: 9999; /* Ensure the menu appears on top of other elements */
+    display: none;
+}
+#mobileNav.show {
+    display: block;
+}
+
+.burgerIcon{
+    width: 20px;
+    position: relative;
+}
+.burgerMenuNav{
+
+    position: relative;
+}
+.burgerMenuNav a{
+    color: var(--hvid);
+    text-decoration: none;
+    display: block;
 }
 /*----------------------header slut--------------------------*/
 
