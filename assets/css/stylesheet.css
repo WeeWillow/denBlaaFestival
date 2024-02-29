@@ -1,9 +1,7 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-  
+:root {
+
     --hvid: hsl(0, 0%, 100%);
     --moerkBlaa: #062f5f;
     --lysTurkis: #77d1cf;
@@ -16,14 +14,14 @@
     --marginStandart: 16px;
 }
 
-*{
+* {
     margin: 0;
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
 
 
-.btn{
+.btn {
     background-color: var(--moerkBlaa);
     border-radius: 6px;
     color: var(--hvid);
@@ -31,7 +29,7 @@
     padding: 8px 16px;
 }
 
-h1{
+h1 {
     font-family: 'Abril Fatface';
     color: var(--moerkBlaa);
     font-weight: 400;
@@ -40,56 +38,63 @@ h1{
 }
 
 /*----------------------header start--------------------------*/
-header{
+header {
     display: flex;
     margin: 8px 16px;
     justify-content: space-between;
 }
-.headerSvg{
+
+.headerSvg {
     fill: var(--moerkBlaa);
     height: 20px;
     width: 20px;
     margin-left: 12px;
 }
-.logo{
+
+.logo {
     width: 25%;
 }
 
-.headerIkoner{
+.headerIkoner {
     display: flex;
     align-items: center;
 }
 
-.headerTekst{
+.headerTekst {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#overTekstHeader{
+
+#overTekstHeader {
     font-weight: 600;
 }
-#underTekstHeader{
+
+#underTekstHeader {
     font-size: 12px;
     color: var(--moerkTurkis);
 }
+
 /*----------------------header slut--------------------------*/
 
 /*----------------------Mad&Drikke start--------------------------*/
-main{
+main {
     margin: 0 16px;
 }
-.introTekst{
+
+.introTekst {
     font-size: 12px;
     text-align: center;
     margin: 0px 60px;
 }
 
-.searchMadOgDrikke{
+.searchMadOgDrikke {
     display: flex;
     justify-content: center;
     margin: 24px 0px;
 }
-.searchFelt{
+
+.searchFelt {
     background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
     background-repeat: no-repeat;
     background-size: 18px;
@@ -103,19 +108,22 @@ main{
 
 
 
-.tabMenu{
+.tabMenu {
     display: flex;
     justify-content: space-between;
 }
+
 .tab {
     display: none;
 }
+
 .tab.active {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--lysBlaa);
     border-radius: 6px;
 }
+
 .tabButton {
     display: flex;
     flex-direction: column;
@@ -123,6 +131,7 @@ main{
     border-top-right-radius: 6px;
     padding: 8px;
 }
+
 .tabButton.active {
     background-color: var(--lysBlaa);
     color: white;
@@ -136,10 +145,12 @@ main{
     border-radius: 6px;
     margin-bottom: 16px;
 }
-.cardsContainer button{
+
+.cardsContainer button {
     max-width: 40%;
     margin: 8px 16px;
 }
+
 .card {
     width: 160px;
     height: 160px;
@@ -148,33 +159,41 @@ main{
     padding: 10px;
 }
 
-.tabMenuIcon{
+.tabMenuIcon {
     height: 20px;
 }
 
+.card {
+    background: var(--hvid);
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px hsl(0, 0%, 0%, 16%);
+}
 
 
 /*----------------------Mad&Drikke slut---------------------------*/
 
 /*----------------------footer start--------------------------*/
-footer{
+footer {
     background-color: var(--moerkBlaa);
     color: var(--hvid);
     padding: 16px;
     font-size: 12px;
 }
-.footerSvg{
+
+.footerSvg {
     fill: var(--hvid);
     height: 20px;
     margin: 8px 8px 8px 0px;
 }
 
-.footerDivPunkt{
+.footerDivPunkt {
     display: flex;
     align-items: center;
 }
 
-.spoergsmaalDiv, .kontaktDiv{
+.spoergsmaalDiv,
+.kontaktDiv {
     margin-top: 16px;
 }
+
 /*----------------------footer slut--------------------------*/
