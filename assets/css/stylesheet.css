@@ -156,7 +156,6 @@ main {
     background: var(--hvid);
     border-radius: 6px;
     box-shadow: 0px 3px 6px hsl(0, 0%, 0%, 16%);
-    font
 }
 
 .card img {
@@ -171,8 +170,11 @@ main {
     font-size: 14px;
 }
 
+.card p {
+    font-size: 12px;
+}
+
 .card div {
-    padding: 8px;
     display: flex;
     justify-content: space-between;
 }
