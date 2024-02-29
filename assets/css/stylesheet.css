@@ -173,6 +173,13 @@ main {
 
 .card div {
     padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img.cardIcon {
+    height: 1rem;
+    width: auto;
 }
 
 .tabMenuIcon {
