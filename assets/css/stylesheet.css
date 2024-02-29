@@ -152,6 +152,7 @@ main {
 .card {
     width: 160px;
     height: 160px;
+    box-sizing: border-box;
     margin: 10px 8px;
     background: var(--hvid);
     border-radius: 6px;
@@ -172,16 +173,37 @@ main {
 
 .card p {
     font-size: 12px;
+    margin: 2px 0 0 0;
 }
 
-.card div {
+.cardContent {
+    overflow: hidden;
+    padding: 0 8px;
+}
+
+.cardContent span {
+    margin-left: 5px;
+}
+
+.cardtxticons {
     display: flex;
     justify-content: space-between;
+    margin: 3px 0 2px 0;
+}
+
+.cardAaben {
+    color: #478D15;
+}
+
+.card p img {
+    height: 9px;
+    width: auto;
 }
 
 img.cardIcon {
-    height: 1rem;
+    height: 14px;
     width: auto;
+    overflow: visible;
 }
 
 .tabMenuIcon {
