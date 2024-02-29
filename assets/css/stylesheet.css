@@ -106,8 +106,6 @@ main {
     padding: 4px 8px;
 }
 
-
-
 .tabMenu {
     display: flex;
     justify-content: space-between;
@@ -155,10 +153,26 @@ main {
     width: 160px;
     height: 160px;
     margin: 10px 8px;
-    padding: 10px;
     background: var(--hvid);
     border-radius: 6px;
     box-shadow: 0px 3px 6px hsl(0, 0%, 0%, 16%);
+    font
+}
+
+.card img {
+    width: 160px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.card h4 {
+    font-size: 14px;
+}
+
+.card div {
+    padding: 8px;
 }
 
 .tabMenuIcon {
