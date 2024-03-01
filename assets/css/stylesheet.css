@@ -288,6 +288,126 @@ h3 {
 
 /*--------------------Praktisk slut---------------------------*/
 
+
+
+/*----------------------kort start--------------------------*/
+
+.btnkort{
+    background-color: var(--moerkBlaa);
+    border-radius: 6px;
+    color: var(--hvid);
+    border: none;
+    padding: 8px 10px;
+    margin: 2px;
+    transform: translateY(-1700%);
+    
+}
+
+.kortBillede {
+    position: relative;
+    height: 600px;
+    background-image: url(/assets/img/kort/kort.jpg);
+    background-size: cover;
+    
+}
+
+.searchMadOgDrikke {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.searchFelt {
+    border-radius: 6px;
+    border: solid 1px var(--moerkBlaa);
+    margin-right: 12px;
+    padding: 4px 8px;
+}
+
+.knapkort {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    position: absolute;
+    transform: translateX(50%, -50%);
+}
+
+.oversigtSpise {
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin: var(--marginStandart);
+    padding: 0px;
+    display: flex;
+    box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 0.4);
+    align-items: center;
+    
+}
+
+.oversigtSpise  img{
+    max-width: 40%;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+.oversigtSpise  button{
+    background-color: var(--lysBlaa);
+    color: black;
+    border-radius: 6px;
+    color: var(--hvid);
+    border: none;
+    padding: 8px 16px;
+    margin: var(--marginStandart);
+   
+}
+
+.oversigtSpise h3{
+    margin-bottom: 6px;
+}
+
+
+
+.forslag1t{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.forslag1{
+    display: flex;
+  
+}
+
+
+.forslag1 img{
+    margin-bottom: 3px;
+}
+
+.afstand{
+    display: flex;
+    align-items: center;
+}
+
+.afstand p{
+    padding-left: 6px;
+}
+.opengreen{
+    color: darkgreen;
+}
+/*----------------------kort slut--------------------------*/
+
+
+
+
+
+
+
+
+
+
 /*----------------------footer start--------------------------*/
 footer {
     background-color: var(--moerkBlaa);
