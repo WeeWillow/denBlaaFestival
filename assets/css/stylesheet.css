@@ -225,106 +225,24 @@ h1 {
     margin: 36px 0px 12px 0px;
 }
 
+
 /*----------------------spillesteder start--------------------------*/
-.introTekst {
-    font-size: 12px;
-    text-align: center;
-    margin: 0px 60px;
-}
-
-.searchMadOgDrikke {
+.cardsContainerSpil {
     display: flex;
-    justify-content: center;
-    margin: 24px 0px;
-}
-
-.searchFelt {
-    background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
-    background-repeat: no-repeat;
-    background-size: 18px;
-    background-position: 95% 50%;
-
-    border-radius: 6px;
-    border: solid 1px var(--moerkBlaa);
-    margin-right: 12px;
-    padding: 4px 8px;
-}
-
-.cardsContainer {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    background-color: var(--lysBlaa);
+    align-items: center;
+    justify-content: center;
     border-radius: 6px;
     margin-bottom: 16px;
+    gap: .5rem 1rem;
 }
 
-.centerCard {
-    justify-content: space-evenly;
-    padding-top: 16px;
-}
-
-.cardsContainer button {
-    max-width: 40%;
-    margin: 8px 16px;
-}
-
-.card {
-    width: 160px;
-    height: 160px;
-    box-sizing: border-box;
-    margin: 10px 8px;
-    background: var(--hvid);
-    border-radius: 6px;
-    box-shadow: 0px 3px 6px hsl(0, 0%, 0%, 16%);
-    overflow: hidden;
-}
-
-.card img {
-    width: 160px;
-    height: 80px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 6px 6px 0 0;
-}
-
-.card h4 {
-    font-size: 14px;
-}
-
-.card p {
-    font-size: 12px;
-    margin: 2px 0 0 0;
-}
-
-.cardContent {
-    overflow: hidden;
-    padding: 0 8px;
-}
-
-.cardContent span {
-    margin-left: 5px;
-}
-
-.cardtxticons {
+.searchMadOgDrikkeSpil{
     display: flex;
-    justify-content: space-between;
-    margin: 3px 0 2px 0;
-}
-
-.cardAaben {
-    color: #478D15;
-}
-
-.card p img {
-    height: 9px;
-    width: auto;
-}
-
-img.cardIcon {
-    height: 14px;
-    width: auto;
-    overflow: visible;
+    justify-content: center;
+    margin: 1rem 1rem;
+    padding: 1rem;
 }
 
 /*----------------------spillesteder slut--------------------------*/
