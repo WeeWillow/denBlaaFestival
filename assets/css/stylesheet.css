@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 
-.btn  {
+.btn   {
     background-color: var(--moerkBlaa);
     border-radius: 6px;
     color: var(--hvid);
@@ -45,13 +45,14 @@ h1 {
 }
 
 /*----------------------header start--------------------------*/
-header  {
+header   {
     display: flex;
     margin: 8px 16px;
     justify-content: space-between;
 }
 
-.headerSvg  {
+
+.headerSvg   {
     fill: var(--moerkBlaa);
     height: 20px;
     width: 20px;
@@ -59,28 +60,31 @@ header  {
 }
 
 
-.logo  {
+
+.logo   {
     width: 25%;
 }
 
-.headerIkoner  {
+.headerIkoner   {
     display: flex;
     align-items: center;
 }
 
-.headerTekst  {
+.headerTekst   {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 
-#overTekstHeader  {
+
+#overTekstHeader   {
     font-weight: 600;
 }
 
 
-#underTekstHeader  {
+
+#underTekstHeader   {
     font-size: 12px;
     color: var(--moerkTurkis);
 }
@@ -138,6 +142,7 @@ h2 {
 }
 
 /*-------------------------------mobilenav slut---------------------------*/
+
 
 /*----------------------header slut--------------------------*/
 
@@ -685,28 +690,178 @@ img.cardIcon {
 
 /*----------------------Mad&Drikke slut---------------------------*/
 
+/*----------------------Kunstnere start--------------------------*/
+main {
+    margin: 0 16px;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 36px 0px 12px 0px;
+}
+
+.introTekst {
+    font-size: 12px;
+    text-align: center;
+    margin: 0px 60px;
+}
+
+.searchMadOgDrikke {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0px;
+}
+
+.searchFelt {
+    background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 95% 50%;
+
+    border-radius: 6px;
+    border: solid 1px var(--moerkBlaa);
+    margin-right: 12px;
+    padding: 4px 8px;
+}
+
+.tabMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--lysBlaa);
+    border-radius: 6px;
+}
+
+.tabButton {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 8px;
+}
+
+.tabButton.active {
+    background-color: var(--lysBlaa);
+    color: white;
+}
+
+.cardsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--lysBlaa);
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+.cardsContainer button {
+    max-width: 40%;
+    margin: 8px 16px;
+}
+
+.card {
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    margin: 10px 8px;
+    background: var(--hvid);
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px hsl(0, 0%, 0%, 16%);
+    overflow: hidden;
+}
+
+.card img {
+    width: 160px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px 6px 0 0;
+}
+
+.card h4 {
+    font-size: 14px;
+}
+
+.card p {
+    font-size: 12px;
+    margin: 2px 0 0 0;
+}
+
+.cardContent {
+    overflow: hidden;
+    padding: 0 8px;
+}
+
+.cardContent span {
+    margin-left: 5px;
+}
+
+.cardtxticons {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0 2px 0;
+}
+
+.cardAaben {
+    color: #478D15;
+}
+
+.card p img {
+    height: 9px;
+    width: auto;
+}
+
+img.cardIcon {
+    height: 14px;
+    width: auto;
+    overflow: visible;
+}
+
+.tabMenuIcon {
+    height: 20px;
+}
+
+/*----------------------Kunstnere slut---------------------------*/
+
+
+
 /*----------------------footer start--------------------------*/
-footer  {
+footer   {
     background-color: var(--moerkBlaa);
     color: var(--hvid);
     padding: 16px;
     font-size: 12px;
 }
 
-.footerSvg {
+
+.footerSvg  {
     fill: var(--hvid);
     height: 20px;
     margin: 8px 8px 8px 0px;
 }
 
-.footerDivPunkt {
+.footerDivPunkt  {
     display: flex;
     align-items: center;
 }
 
 .spoergsmaalDiv,
 .kontaktDiv {
+.spoergsmaalDiv,
+.kontaktDiv {
     margin-top: 16px;
 }
+
 
 /*----------------------footer slut--------------------------*/
