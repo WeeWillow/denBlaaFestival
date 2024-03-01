@@ -435,7 +435,7 @@ img.koncertsvg {
 .kortBillede {
     width: auto;
     height: 600px;
-    background-image: url(../assets/img/kort/kort.jpg);
+    background-image: url(/assets/img/kort/kort.jpg);
     background-size: cover;
 }
 
