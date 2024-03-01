@@ -1,9 +1,7 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-  
+:root {
+
     --hvid: hsl(0, 0%, 100%);
     --moerkBlaa: #062f5f;
     --lysTurkis: #77d1cf;
@@ -16,14 +14,14 @@
     --marginStandart: 16px;
 }
 
-*{
+* {
     margin: 0;
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
 
 
-.btn{
+.btn {
     background-color: var(--moerkBlaa);
     border-radius: 6px;
     color: var(--hvid);
@@ -35,38 +33,41 @@
 
 
 /*----------------------header start--------------------------*/
-header{
+header {
     display: flex;
     margin: 8px 16px;
     justify-content: space-between;
 }
-.headerSvg{
+
+.headerSvg {
     fill: var(--moerkBlaa);
     height: 20px;
     width: 20px;
     margin-left: 12px;
 }
-.logo{
+
+.logo {
     width: 25%;
 }
-.headerTekst{
+
+.headerTekst {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#overTekstHeader{
+
+#overTekstHeader {
     font-weight: 600;
 }
-#underTekstHeader{
+
+#underTekstHeader {
     font-size: 12px;
     color: var(--moerkTurkis);
 }
 
-h2{
+h2 {
     padding: 0.5rem;
 }
-
-
 
 /*-------------------------------mobilenav start---------------------------*/
 #mobileNav {
@@ -75,51 +76,61 @@ h2{
     right: 0;
     width: 40%;
     height: auto;
-    background-color:#062f5f;
-    z-index: 1; 
+    background-color: #062f5f;
+    z-index: 1;
     display: none;
     padding: 16px;
 }
+
 #mobileNav.show {
     display: block;
-    
+
 }
-#mobileNav li{
+
+#mobileNav li {
     display: flex;
 }
-#burgerIcon.active{
+
+#burgerIcon.active {
     fill: var(--hvid);
 }
+
 #burgerIcon {
     width: 20px;
     position: relative;
     z-index: 2;
 }
-.burgerMenuNav a{
+
+.burgerMenuNav a {
     color: var(--hvid);
     text-decoration: none;
     display: block;
     padding: 12px;
 }
-.linkSvg{
+
+.linkSvg {
     fill: var(--hvid);
-    width: 20px;  
+    width: 20px;
 }
-.navLink{
+
+.navLink {
     color: var(--lysTurkis);
 }
+
 /*-------------------------------mobilenav slut---------------------------*/
 
 /*----------------------header slut--------------------------*/
 /*----------------------forside start--------------------------*/
-.heroIntro{
-    max-height:400px;
+.heroIntro {
+    max-height: 400px;
 }
-.heroIntro img{
+
+.heroIntro img {
     max-width: 100%;
     height: auto;
 }
-.introTekstF{
+
+.introTekstF {
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
     transform: translateY(-70%);
@@ -128,20 +139,25 @@ h2{
     text-align: center;
     margin: var(--marginStandart);
 }
-.introTekstF p, h1 {
-text-align: center;
+
+.introTekstF p,
+h1 {
+    text-align: center;
 }
-/* Gratis festival sektion */ 
-.gratisFestival{ 
+
+/* Gratis festival sektion */
+.gratisFestival {
     background-image: url(/assets/img/misc/musikbagg.jpg);
     margin: var(--marginStandart);
     padding: 1rem;
     border-radius: 5px;
 }
-.gratisFestival h2{
+
+.gratisFestival h2 {
     text-align: center;
 }
-.Fp{
+
+.Fp {
     background-color: #B9D7EF;
     margin: var(--marginStandart);
     padding: 1rem;
@@ -149,40 +165,46 @@ text-align: center;
     text-align: center;
     max-height 370px;
 }
-.Fp img{
+
+.Fp img {
     padding-top: 0.5rem;
     max-width: 100%;
     height: auto;
-    border-radius: 5px 5px 5px 5px; 
+    border-radius: 5px 5px 5px 5px;
 }
-.center{
+
+.center {
     transform: translateY(-450%);
 }
+
 /*----------------------forside slut--------------------------*/
 
 
 /*--------------------Praktisk start---------------------------*/
-h1{
+h1 {
     font-family: 'Abril Fatface';
     color: var(--moerkBlaa);
     font-weight: 400;
     text-align: center;
     margin: 36px 0px 12px 0px;
 }
-h2{
+
+h2 {
     font-family: 'Abril Fatface';
     color: var(--moerkBlaa);
     font-weight: 400;
     text-align: center;
     margin: 24px 0px 12px 0px;
 }
-h3{
+
+h3 {
     color: var(--moerkBlaa);
     text-align: center;
     font-size: 16px;
     margin-bottom: 12px;
 }
-.praktiskeCard{
+
+.praktiskeCard {
     background-color: var(--lysGraa);
     border-radius: 6px;
     display: flex;
@@ -192,31 +214,37 @@ h3{
     text-align: left;
     min-height: 180px;
 }
-.praktiskeCard p{
+
+.praktiskeCard p {
     padding-left: 8px;
 }
-.praktiskeCardSvg{
+
+.praktiskeCardSvg {
     height: 30px;
     margin: 12px;
 }
-.praktiskeCardSvgLille{
+
+.praktiskeCardSvgLille {
     height: 14px;
     margin: 4px;
 }
-.infoGrid{
+
+.infoGrid {
     padding: 8px 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
     color: var(--moerkBlaa);
 }
-.tekstDiv{
+
+.tekstDiv {
     display: flex;
     font-size: 12px;
     align-items: center;
-    
+
 }
-.frivilligDiv{
+
+.frivilligDiv {
     display: flex;
     flex-direction: column;
     justify-content: cente;
@@ -227,52 +255,61 @@ h3{
     border-radius: 6px;
     color: var(--moerkBlaa);
 }
-.frivilligDiv p{
+
+.frivilligDiv p {
     margin-bottom: 12px;
 }
-.frivilligForm{
+
+.frivilligForm {
     display: flex;
     flex-direction: column;
-    
+
 }
-.frivilligForm_form{
+
+.frivilligForm_form {
     display: flex;
     flex-direction: column;
     text-align: left;
-    
+
 }
-.frivilligForm button{
+
+.frivilligForm button {
     max-width: 45%;
     margin: 6px;
     translate: 50%;
 }
-.formInput{
+
+.formInput {
     outline: none;
     border: none;
     margin: 6px 0px 12px 0px;
     padding: 8px;
 }
+
 /*--------------------Praktisk slut---------------------------*/
 
 /*----------------------footer start--------------------------*/
-footer{
+footer {
     background-color: var(--moerkBlaa);
     color: var(--hvid);
     padding: 16px;
     font-size: 12px;
 }
-.footerSvg{
+
+.footerSvg {
     fill: var(--hvid);
     height: 20px;
     margin: 8px 8px 8px 0px;
 }
 
-.footerDivPunkt{
+.footerDivPunkt {
     display: flex;
     align-items: center;
 }
 
-.spoergsmaalDiv, .kontaktDiv{
+.spoergsmaalDiv,
+.kontaktDiv {
     margin-top: 16px;
 }
+
 /*----------------------footer slut--------------------------*/
