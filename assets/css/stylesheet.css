@@ -49,12 +49,6 @@ header{
 .logo{
     width: 25%;
 }
-
-.headerIkoner{
-    display: flex;
-    align-items: center;
-}
-
 .headerTekst{
     display: flex;
     flex-direction: column;
@@ -71,19 +65,60 @@ header{
 h2{
     padding: 0.5rem;
 }
+
+
+
+/*-------------------------------mobilenav start---------------------------*/
+#mobileNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: auto;
+    background-color:#062f5f;
+    z-index: 1; 
+    display: none;
+    padding: 16px;
+}
+#mobileNav.show {
+    display: block;
+    
+}
+#mobileNav li{
+    display: flex;
+}
+#burgerIcon.active{
+    fill: var(--hvid);
+}
+#burgerIcon {
+    width: 20px;
+    position: relative;
+    z-index: 2;
+}
+.burgerMenuNav a{
+    color: var(--hvid);
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+}
+.linkSvg{
+    fill: var(--hvid);
+    width: 20px;  
+}
+.navLink{
+    color: var(--lysTurkis);
+}
+/*-------------------------------mobilenav slut---------------------------*/
+
 /*----------------------header slut--------------------------*/
 /*----------------------forside start--------------------------*/
 .heroIntro{
     max-height:400px;
-
 }
-
 .heroIntro img{
     max-width: 100%;
     height: auto;
 }
-
-
 .introTekstF{
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
@@ -93,56 +128,131 @@ h2{
     text-align: center;
     margin: var(--marginStandart);
 }
-
 .introTekstF p, h1 {
 text-align: center;
 }
-
-
 /* Gratis festival sektion */ 
 .gratisFestival{ 
-background-image: url(/assets/img/misc/musikbagg.jpg);
-margin: var(--marginStandart);
-padding: 1rem;
-border-radius: 5px;
-
+    background-image: url(/assets/img/misc/musikbagg.jpg);
+    margin: var(--marginStandart);
+    padding: 1rem;
+    border-radius: 5px;
 }
-
-
-   
-   
 .gratisFestival h2{
     text-align: center;
 }
-
 .Fp{
     background-color: #B9D7EF;
     margin: var(--marginStandart);
-padding: 1rem;
-border-radius: 5px;
-text-align: center;
-max-height 370px;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    max-height 370px;
 }
-
-
-
 .Fp img{
     padding-top: 0.5rem;
     max-width: 100%;
     height: auto;
     border-radius: 5px 5px 5px 5px; 
 }
-
 .center{
     transform: translateY(-450%);
 }
-
 /*----------------------forside slut--------------------------*/
 
 
-
-
-
+/*--------------------Praktisk start---------------------------*/
+h1{
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 36px 0px 12px 0px;
+}
+h2{
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 24px 0px 12px 0px;
+}
+h3{
+    color: var(--moerkBlaa);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.praktiskeCard{
+    background-color: var(--lysGraa);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 8px 8px;
+    text-align: left;
+    min-height: 180px;
+}
+.praktiskeCard p{
+    padding-left: 8px;
+}
+.praktiskeCardSvg{
+    height: 30px;
+    margin: 12px;
+}
+.praktiskeCardSvgLille{
+    height: 14px;
+    margin: 4px;
+}
+.infoGrid{
+    padding: 8px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    color: var(--moerkBlaa);
+}
+.tekstDiv{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    
+}
+.frivilligDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: cente;
+    background-color: var(--lysBlaa);
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 6px;
+    color: var(--moerkBlaa);
+}
+.frivilligDiv p{
+    margin-bottom: 12px;
+}
+.frivilligForm{
+    display: flex;
+    flex-direction: column;
+    
+}
+.frivilligForm_form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.frivilligForm button{
+    max-width: 45%;
+    margin: 6px;
+    translate: 50%;
+}
+.formInput{
+    outline: none;
+    border: none;
+    margin: 6px 0px 12px 0px;
+    padding: 8px;
+}
+/*--------------------Praktisk slut---------------------------*/
 
 /*----------------------footer start--------------------------*/
 footer{
