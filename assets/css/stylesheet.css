@@ -29,7 +29,10 @@
     color: var(--hvid);
     border: none;
     padding: 8px 16px;
+    margin-top: 1rem;
+
 }
+
 
 /*----------------------header start--------------------------*/
 header{
@@ -64,7 +67,82 @@ header{
     font-size: 12px;
     color: var(--moerkTurkis);
 }
+
+h2{
+    padding: 0.5rem;
+}
 /*----------------------header slut--------------------------*/
+/*----------------------forside start--------------------------*/
+.heroIntro{
+    max-height:400px;
+
+}
+
+.heroIntro img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.introTekstF{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    transform: translateY(-70%);
+    padding: 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: var(--marginStandart);
+}
+
+.introTekstF p, h1 {
+text-align: center;
+}
+
+
+/* Gratis festival sektion */ 
+.gratisFestival{ 
+background-image: url(/assets/img/misc/musikbagg.jpg);
+margin: var(--marginStandart);
+padding: 1rem;
+border-radius: 5px;
+
+}
+
+
+   
+   
+.gratisFestival h2{
+    text-align: center;
+}
+
+.Fp{
+    background-color: #B9D7EF;
+    margin: var(--marginStandart);
+padding: 1rem;
+border-radius: 5px;
+text-align: center;
+max-height 370px;
+}
+
+
+
+.Fp img{
+    padding-top: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 5px 5px; 
+}
+
+.center{
+    transform: translateY(-450%);
+}
+
+/*----------------------forside slut--------------------------*/
+
+
+
+
+
 
 /*----------------------footer start--------------------------*/
 footer{
