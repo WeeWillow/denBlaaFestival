@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*----------------------general start--------------------------*/
-:root  {
-  /* farver */
+:root {
+    /* farver */
     --hvid: hsl(0, 0%, 100%);
     --moerkBlaa: rgb(5, 47, 94);
     --lysTurkis: #77d1cf;
@@ -19,40 +19,37 @@
     --borderRadiusStandard: 5px;
 }
 
-*  {
+* {
     margin: 0;
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
 
-.btn   {
+.btn {
     background-color: var(--moerkBlaa);
     border-radius: 6px;
     color: var(--hvid);
     border: none;
     padding: 8px 16px;
-    margin-top: 1rem;
+}
+
+#active a,
+#active>svg.linkSvg {
+    color: var(--lysTurkis);
+    fill: var(--lysTurkis);
 }
 
 /*----------------------general slut--------------------------*/
 
-h1 {
-    font-family: 'Abril Fatface';
-    color: var(--moerkBlaa);
-    font-weight: 400;
-    text-align: center;
-    margin: 36px 0px 12px 0px;
-}
-
 /*----------------------header start--------------------------*/
-header   {
+header {
     display: flex;
     margin: 8px 16px;
     justify-content: space-between;
 }
 
 
-.headerSvg   {
+.headerSvg {
     fill: var(--moerkBlaa);
     height: 20px;
     width: 20px;
@@ -61,16 +58,16 @@ header   {
 
 
 
-.logo   {
+.logo {
     width: 25%;
 }
 
-.headerIkoner   {
+.headerIkoner {
     display: flex;
     align-items: center;
 }
 
-.headerTekst   {
+.headerTekst {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,13 +75,13 @@ header   {
 
 
 
-#overTekstHeader   {
+#overTekstHeader {
     font-weight: 600;
 }
 
 
 
-#underTekstHeader   {
+#underTekstHeader {
     font-size: 12px;
     color: var(--moerkTurkis);
 }
@@ -159,7 +156,7 @@ h2 {
 .introTekstF {
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
-    transform: translateY(-70%);
+    transform: translateY(-75%);
     padding: 1rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -167,14 +164,26 @@ h2 {
 }
 
 .introTekstF p,
-h1 {
+.introTekstF h1 {
     text-align: center;
+}
+
+.introTekstF p {
+    margin: 1rem 0 2rem 0;
+}
+
+.introTekstF h1 {
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 2rem 0px 12px 0px;
 }
 
 /* Gratis festival sektion */
 .gratisFestival {
     background-image: url(/assets/img/misc/musikbagg.jpg);
-    margin: var(--marginStandart);
+    margin: var(--marginStandart) 0;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -185,7 +194,7 @@ h1 {
 
 .Fp {
     background-color: #B9D7EF;
-    margin: var(--marginStandart);
+    margin: var(--marginStandart) 0;
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
@@ -193,10 +202,13 @@ h1 {
 }
 
 .Fp img {
-    padding-top: 0.5rem;
+    margin-top: 1rem;
     max-width: 100%;
-    height: auto;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: .5rem;
+}
+
+.Fp h2 {
+    margin: 0;
 }
 
 .center {
@@ -205,7 +217,6 @@ h1 {
 
 /*----------------------forside slut--------------------------*/
 
-/*--------------------Praktisk start---------------------------*/
 h1 {
     font-family: 'Abril Fatface';
     color: var(--moerkBlaa);
@@ -214,6 +225,7 @@ h1 {
     margin: 36px 0px 12px 0px;
 }
 
+/*--------------------Praktisk start---------------------------*/
 h2 {
     font-family: 'Abril Fatface';
     color: var(--moerkBlaa);
@@ -255,7 +267,7 @@ h3 {
 }
 
 .infoGrid {
-    padding: 8px 16px;
+    padding: 8px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px;
@@ -275,7 +287,7 @@ h3 {
     background-color: var(--lysBlaa);
     text-align: center;
     padding: 16px;
-    margin: 16px;
+    margin: 16px 0;
     border-radius: 6px;
     color: var(--moerkBlaa);
 }
@@ -318,62 +330,130 @@ h3 {
     border: none;
     padding: 8px 10px;
     margin: 2px;
-    transform: translateY(-1700%);
-
+    /* transform: translateY(-1900%); */
 }
 
-.kortBillede {
-    position: relative;
-    height: 600px;
-    background-image: url(/assets/img/kort/kort.jpg);
-    background-size: cover;
-
+.searchFelt.kort {
+    width: 300px;
 }
 
 .searchMadOgDrikke {
-    position: absolute;
-    top: 10%;
-    left: 60%;
-    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
-
+    margin: 1rem 1rem;
+    padding-top: 2rem;
 }
 
-.searchFelt {
-    border-radius: 6px;
-    border: solid 1px var(--moerkBlaa);
-    margin-right: 12px;
-    padding: 4px 8px;
+.koncertcardKort {
+    max-height: 120px;
+    background: var(--hvid);
+    margin: var(--marginStandart);
+    border-radius: var(--borderRadiusStandard);
+    box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3, 1fr;
+}
+
+.koncertcardKort img {
+    margin-right: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: var(--borderRadiusStandard) 0 0 var(--borderRadiusStandard);
+}
+
+.koncertcardKort .row1 p {
+    margin-top: .5rem;
+}
+
+img.koncertsvg {
+    width: 16px;
+    height: auto;
+}
+
+.koncertcard .artistinfoKort {
+    padding: var(--marginHalf);
+    display: flex;
+    gap: .55rem;
+    justify-content: space-between;
+}
+
+.artistinfoKort.row1 {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    padding-top: .3rem;
+}
+
+.artistinfoKort.row2 {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.artistinfoKort.row2 p,
+.artistinfoKort.row3 p {
+    font-weight: 500;
+    text-transform: none;
+    font-size: small;
+}
+
+.artistinfoKort.row3 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .4rem;
+}
+
+.kortBillede {
+    width: auto;
+    height: 600px;
+    background-image: url(/assets/img/kort/kort.jpg);
+    background-size: cover;
 }
 
 .knapkort {
     display: flex;
     justify-content: space-around;
     margin: 1rem;
-    position: absolute;
     transform: translateX(50%, -50%);
 }
 
 .oversigtSpise {
     border-radius: 5px;
-    background-color: #fafafa;
-    margin: var(--marginStandart);
     padding: 0px;
     display: flex;
     box-shadow: 0px 10px 10px hsla(0, 0%, 0%, 0.4);
     align-items: center;
-
+    background-color: #fafafa;
+    margin: var(--marginStandart);
 }
 
 .oversigtSpise img {
     max-width: 40%;
-    height: auto;
-    border-radius: 5px;
-
+    height: 138px;
+    border-radius: 5px 0 0 5px;
 }
 
 .oversigtSpise button {
+    background-color: var(--lysBlaa);
+    color: black;
+    border-radius: 6px;
+    color: var(--hvid);
+    border: none;
+    padding: 8px 16px;
+    margin: var(--marginStandart);
+}
+
+.routebtn {
+    grid-column: 4 / 5;
+    grid-row: 1 / 5;
     background-color: var(--lysBlaa);
     color: black;
     border-radius: 6px;
@@ -417,21 +497,21 @@ h3 {
 /*----------------------kort slut--------------------------*/
 
 /*----------------------main start--------------------------*/
-main {
+#indexMain,
+#kunstnereMain,
+#madDrikkeMain,
+#praktiskMain,
+#programMain {
     margin: var(--marginStandart);
+}
+
+#indexMain {
+    margin-bottom: 1.5rem;
 }
 
 main header.hero {
     flex-direction: column;
     text-align: center;
-}
-
-h1 {
-    font-family: 'Abril Fatface';
-    color: var(--moerkBlaa);
-    font-weight: 400;
-    text-align: center;
-    margin: 36px 0px 12px 0px;
 }
 
 .filterbtn {
@@ -555,32 +635,10 @@ div.artistinfo p {
 /*----------------------main slut--------------------------*/
 
 /*----------------------Mad&Drikke start--------------------------*/
-main {
-    margin: 0 16px;
-}
-
 .introTekst {
     font-size: 12px;
     text-align: center;
     margin: 0px 60px;
-}
-
-.searchMadOgDrikke {
-    display: flex;
-    justify-content: center;
-    margin: 24px 0px;
-}
-
-.searchFelt {
-    background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
-    background-repeat: no-repeat;
-    background-size: 18px;
-    background-position: 95% 50%;
-
-    border-radius: 6px;
-    border: solid 1px var(--moerkBlaa);
-    margin-right: 12px;
-    padding: 4px 8px;
 }
 
 .tabMenu {
@@ -616,6 +674,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: var(--lysBlaa);
     border-radius: 6px;
     margin-bottom: 16px;
@@ -690,41 +749,28 @@ img.cardIcon {
 
 /*----------------------Mad&Drikke slut---------------------------*/
 
-/*----------------------Kunstnere start--------------------------*/
-main {
-    margin: 0 16px;
+.searchFelt.food {
+    background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 95% 50%;
 }
 
-h1 {
-    font-family: 'Abril Fatface';
-    color: var(--moerkBlaa);
-    font-weight: 400;
-    text-align: center;
-    margin: 36px 0px 12px 0px;
+.searchFelt {
+    border-radius: 6px;
+    border: solid 1px var(--moerkBlaa);
+    margin-right: 12px;
+    padding: 10px;
 }
+
+/*----------------------Kunstnere start--------------------------*/
+
+
 
 .introTekst {
     font-size: 12px;
     text-align: center;
     margin: 0px 60px;
-}
-
-.searchMadOgDrikke {
-    display: flex;
-    justify-content: center;
-    margin: 24px 0px;
-}
-
-.searchFelt {
-    background-image: url('/assets/img/svg_madOgDrikke/location-crosshairs-solid.svg');
-    background-repeat: no-repeat;
-    background-size: 18px;
-    background-position: 95% 50%;
-
-    border-radius: 6px;
-    border: solid 1px var(--moerkBlaa);
-    margin-right: 12px;
-    padding: 4px 8px;
 }
 
 .tabMenu {
@@ -837,7 +883,7 @@ img.cardIcon {
 
 
 /*----------------------footer start--------------------------*/
-footer   {
+footer {
     background-color: var(--moerkBlaa);
     color: var(--hvid);
     padding: 16px;
@@ -845,23 +891,24 @@ footer   {
 }
 
 
-.footerSvg  {
+.footerSvg {
     fill: var(--hvid);
     height: 20px;
     margin: 8px 8px 8px 0px;
 }
 
-.footerDivPunkt  {
+.footerDivPunkt {
     display: flex;
     align-items: center;
 }
 
 .spoergsmaalDiv,
 .kontaktDiv {
-.spoergsmaalDiv,
-.kontaktDiv {
-    margin-top: 16px;
-}
+
+    .spoergsmaalDiv,
+    .kontaktDiv {
+        margin-top: 16px;
+    }
 
 
-/*----------------------footer slut--------------------------*/
+    /*----------------------footer slut--------------------------*/
