@@ -868,9 +868,6 @@ img.cardIcon {
 }
 
 /*----------------------Kunstnere start--------------------------*/
-
-
-
 .introTekst {
     font-size: 12px;
     text-align: center;
@@ -981,10 +978,7 @@ img.cardIcon {
 .tabMenuIcon {
     height: 20px;
 }
-
 /*----------------------Kunstnere slut---------------------------*/
-
-
 
 /*----------------------footer start--------------------------*/
 footer {
@@ -993,7 +987,6 @@ footer {
     padding: 16px;
     font-size: 12px;
 }
-
 
 .footerSvg {
     fill: var(--hvid);
@@ -1008,11 +1001,6 @@ footer {
 
 .spoergsmaalDiv,
 .kontaktDiv {
-
-    .spoergsmaalDiv,
-    .kontaktDiv {
-        margin-top: 16px;
-    }
-
-
+    margin-top: 16px;
+}
     /*----------------------footer slut--------------------------*/
