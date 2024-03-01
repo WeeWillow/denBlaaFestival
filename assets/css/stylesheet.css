@@ -568,12 +568,18 @@ article {
     margin: var(--marginMedium) 0 var(--marginMedium) 0;
 }
 
-.eventdate {
+.eventdate,
+.eventdate h2 {
+    font-family: 'Montserrat';
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
+    margin: .2rem 0;
+    padding: 0;
 }
+
 
 article.eventcard {
     background: var(--lysTurkis20pct);
