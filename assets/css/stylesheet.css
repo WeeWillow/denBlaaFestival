@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*----------------------general start--------------------------*/
 :root {
-
+    /* farver */
     --hvid: hsl(0, 0%, 100%);
-    --moerkBlaa: #062f5f;
+    --moerkBlaa: rgb(5, 47, 94);
     --lysTurkis: #77d1cf;
+    --lysTurkis20pct: hsla(179, 49%, 64%, 0.2);
     --moerkTurkis: #427877;
     --lysBlaa: #b9d7ef;
     --lysGraa: #f0f0f0;
     --sort: #000000;
-
-
+    /* margin, padding and radius */
+    --marginDouble: 32px;
+    --marginMedium: 24px;
     --marginStandart: 16px;
+    --marginHalf: 8px;
+    --borderRadiusStandard: 5px;
 }
-
-* {
+*  {
     margin: 0;
     font-family: 'Montserrat';
     box-sizing: border-box;
 }
-
-
 .btn {
     background-color: var(--moerkBlaa);
     border-radius: 6px;
@@ -28,9 +30,9 @@
     border: none;
     padding: 8px 16px;
     margin-top: 1rem;
-
 }
 
+/*----------------------general slut--------------------------*/
 
 /*----------------------header start--------------------------*/
 header {
@@ -49,8 +51,11 @@ header {
 .logo {
     width: 25%;
 }
-
-.headerTekst {
+.headerIkoner{
+    display: flex;
+    align-items: center;
+}
+.headerTekst{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,11 +69,9 @@ header {
     font-size: 12px;
     color: var(--moerkTurkis);
 }
-
 h2 {
     padding: 0.5rem;
 }
-
 /*-------------------------------mobilenav start---------------------------*/
 #mobileNav {
     position: fixed;
@@ -81,42 +84,33 @@ h2 {
     display: none;
     padding: 16px;
 }
-
 #mobileNav.show {
     display: block;
-
 }
-
 #mobileNav li {
     display: flex;
 }
-
 #burgerIcon.active {
     fill: var(--hvid);
 }
-
 #burgerIcon {
     width: 20px;
     position: relative;
     z-index: 2;
 }
-
 .burgerMenuNav a {
     color: var(--hvid);
     text-decoration: none;
     display: block;
     padding: 12px;
 }
-
 .linkSvg {
     fill: var(--hvid);
     width: 20px;
 }
-
 .navLink {
     color: var(--lysTurkis);
 }
-
 /*-------------------------------mobilenav slut---------------------------*/
 
 /*----------------------header slut--------------------------*/
@@ -124,12 +118,10 @@ h2 {
 .heroIntro {
     max-height: 400px;
 }
-
 .heroIntro img {
     max-width: 100%;
     height: auto;
 }
-
 .introTekstF {
     background-color: rgb(255, 255, 255);
     border-radius: 4px;
@@ -139,12 +131,10 @@ h2 {
     text-align: center;
     margin: var(--marginStandart);
 }
-
 .introTekstF p,
 h1 {
     text-align: center;
 }
-
 /* Gratis festival sektion */
 .gratisFestival {
     background-image: url(/assets/img/misc/musikbagg.jpg);
@@ -152,33 +142,27 @@ h1 {
     padding: 1rem;
     border-radius: 5px;
 }
-
 .gratisFestival h2 {
     text-align: center;
 }
-
 .Fp {
     background-color: #B9D7EF;
     margin: var(--marginStandart);
     padding: 1rem;
     border-radius: 5px;
     text-align: center;
-    max-height 370px;
+    max-height: 370px;
 }
-
 .Fp img {
     padding-top: 0.5rem;
     max-width: 100%;
     height: auto;
     border-radius: 5px 5px 5px 5px;
 }
-
 .center {
     transform: translateY(-450%);
 }
-
 /*----------------------forside slut--------------------------*/
-
 
 /*--------------------Praktisk start---------------------------*/
 h1 {
@@ -188,7 +172,6 @@ h1 {
     text-align: center;
     margin: 36px 0px 12px 0px;
 }
-
 h2 {
     font-family: 'Abril Fatface';
     color: var(--moerkBlaa);
@@ -196,14 +179,12 @@ h2 {
     text-align: center;
     margin: 24px 0px 12px 0px;
 }
-
 h3 {
     color: var(--moerkBlaa);
     text-align: center;
     font-size: 16px;
     margin-bottom: 12px;
 }
-
 .praktiskeCard {
     background-color: var(--lysGraa);
     border-radius: 6px;
@@ -214,21 +195,17 @@ h3 {
     text-align: left;
     min-height: 180px;
 }
-
 .praktiskeCard p {
     padding-left: 8px;
 }
-
 .praktiskeCardSvg {
     height: 30px;
     margin: 12px;
 }
-
 .praktiskeCardSvgLille {
     height: 14px;
     margin: 4px;
 }
-
 .infoGrid {
     padding: 8px 16px;
     display: grid;
@@ -236,14 +213,11 @@ h3 {
     gap: 6px;
     color: var(--moerkBlaa);
 }
-
 .tekstDiv {
     display: flex;
     font-size: 12px;
     align-items: center;
-
 }
-
 .frivilligDiv {
     display: flex;
     flex-direction: column;
@@ -255,43 +229,32 @@ h3 {
     border-radius: 6px;
     color: var(--moerkBlaa);
 }
-
 .frivilligDiv p {
     margin-bottom: 12px;
 }
-
 .frivilligForm {
     display: flex;
     flex-direction: column;
-
 }
-
 .frivilligForm_form {
     display: flex;
     flex-direction: column;
     text-align: left;
-
 }
-
 .frivilligForm button {
     max-width: 45%;
     margin: 6px;
     translate: 50%;
 }
-
 .formInput {
     outline: none;
     border: none;
     margin: 6px 0px 12px 0px;
     padding: 8px;
 }
-
 /*--------------------Praktisk slut---------------------------*/
 
-
-
 /*----------------------kort start--------------------------*/
-
 .btnkort{
     background-color: var(--moerkBlaa);
     border-radius: 6px;
@@ -302,7 +265,6 @@ h3 {
     transform: translateY(-1700%);
     
 }
-
 .kortBillede {
     position: relative;
     height: 600px;
@@ -310,7 +272,6 @@ h3 {
     background-size: cover;
     
 }
-
 .searchMadOgDrikke {
     position: absolute;
     top: 10%;
@@ -320,14 +281,12 @@ h3 {
     justify-content: center;
     
 }
-
 .searchFelt {
     border-radius: 6px;
     border: solid 1px var(--moerkBlaa);
     margin-right: 12px;
     padding: 4px 8px;
 }
-
 .knapkort {
     display: flex;
     justify-content: space-around;
@@ -335,7 +294,6 @@ h3 {
     position: absolute;
     transform: translateX(50%, -50%);
 }
-
 .oversigtSpise {
     border-radius: 5px;
     background-color: #fafafa;
@@ -346,14 +304,12 @@ h3 {
     align-items: center;
     
 }
-
 .oversigtSpise  img{
     max-width: 40%;
     height: auto;
     border-radius: 5px;
     
 }
-
 .oversigtSpise  button{
     background-color: var(--lysBlaa);
     color: black;
@@ -362,15 +318,10 @@ h3 {
     border: none;
     padding: 8px 16px;
     margin: var(--marginStandart);
-   
 }
-
 .oversigtSpise h3{
     margin-bottom: 6px;
 }
-
-
-
 .forslag1t{
     display: flex;
     flex-direction: column;
@@ -378,19 +329,14 @@ h3 {
 }
 .forslag1{
     display: flex;
-  
 }
-
-
 .forslag1 img{
     margin-bottom: 3px;
 }
-
 .afstand{
     display: flex;
     align-items: center;
 }
-
 .afstand p{
     padding-left: 6px;
 }
@@ -399,12 +345,138 @@ h3 {
 }
 /*----------------------kort slut--------------------------*/
 
+/*----------------------main start--------------------------*/
+main {
+    margin: var(--marginStandart);
+}
+main header.hero {
+    flex-direction: column;
+    text-align: center;
+}
+h1 {
+    font-family: 'Abril Fatface';
+    color: var(--moerkBlaa);
+    font-weight: 400;
+    text-align: center;
+    margin: 36px 0px 12px 0px;
+}
+.filterbtn {
+    margin: var(--marginStandart) 0 var(--marginStandart) 0;
+    display: flex;
+    justify-content: space-between;
+}
+.filterbtn p {
+    background: var(--lysBlaa);
+    color: var(--moerkBlaa);
+    padding: .3rem var(--marginHalf) .3rem var(--marginHalf);
+    border-radius: var(--borderRadiusStandard);
+    font-weight: 500;
+}
+
+.filterbtn span {
+    font-weight: 600;
+}
+
+/*------------event card start----------------*/
+header.eventheader {
+    display: block;
+    margin: 0 0 var(--marginHalf) 0;
+}
+
+header.eventheader p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+article {
+    margin: var(--marginMedium) 0 var(--marginMedium) 0;
+}
+
+.eventdate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article.eventcard {
+    background: var(--lysTurkis20pct);
+    padding: var(--marginHalf);
+    color: var(--moerkBlaa);
+    border-radius: var(--borderRadiusStandard);
+}
+
+.koncertcard {
+    max-height: 120px;
+    background: var(--hvid);
+    margin: var(--marginStandart) 0 var(--marginStandart) 0;
+    border-radius: var(--borderRadiusStandard);
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3, 1fr;
+}
+.koncertcard .artistinfo {
+    padding: var(--marginHalf);
+    display: flex;
+    gap: .55rem;
+    justify-content: space-between;
+}
+
+.artistinfo.row1 {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+
+.artistinfo.row2 {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 var(--marginHalf);
+}
+
+.artistinfo.row2 p,
+.artistinfo.row3 p {
+    font-weight: 500;
+    text-transform: none;
+    font-size: small;
+    padding: 0 var(--marginHalf);
+}
+
+.artistinfo.row3 {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
+div.artistinfo p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
 
+.koncertsvg {
+    width: 16px;
+    height: auto;
+}
 
+.koncertcard img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: var(--borderRadiusStandard) 0 0 var(--borderRadiusStandard);
+}
+.hidden {
+    opacity: 0;
+}
 
-
+/*------------event card slut-----------------*/
+/*----------------------main slut--------------------------*/
 
 
 
